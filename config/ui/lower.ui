@@ -1,0 +1,14 @@
+vbox : bg2 :
+{
+	hbox : (size = '26' prev = '3' next = '3') :
+	{
+		textField : (id = 'cmd' onEnter = '/' default = 'console' maxLength = '512' clear = '1' history = '1' border = '10' textSize = '8 8' bgColor = '40 40 40' textAlign = '1')
+		 : (flex = '1' size = '90' next = '3' margin = '0 0 1 1') : (radius = '6') 
+		 : (hint = 'Console [F1] : History [UP/DOWN]')
+	}
+
+	vbox : (id = 'v_hint') :
+	{
+		hint : (id = 'main' size = '24') : (hint = 'Hint : [HotKey]')
+	}
+}	

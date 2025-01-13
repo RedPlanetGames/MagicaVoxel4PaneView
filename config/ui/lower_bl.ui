@@ -1,0 +1,26 @@
+vbox : bg2 :
+{
+	hbox : (size = '26' prev = '3' next = '3') :
+	{
+		opBox : (value = '0') : (size = '70') :
+		{
+			hbox :
+			{
+				option : (select_id = '0' textSize = '7.5 7.5' text = 'SIDE') : (flex = '1' next = '2') : (hint = 'Side View')
+			}
+		}
+		
+		opBox : (bind = [[value = 'cam_mode']] value = '0' onSelect = 'set ui/scene_bl.proj') : (size = '140') :
+		{
+			hbox :
+			{
+				option : (select_id = '0' textSize = '7.5 7.5' text = 'Perspective*') : (flex = '1' next = '2') : (hint = 'Perspective Camera')
+				option : (select_id = '1' textSize = '7.5 7.5' text = 'Free*') : (flex = '1' next = '2') : (hint = 'Freestyle Camera : Move [WASDQE]')
+				option : (select_id = '2' textSize = '7.5 7.5' text = 'Orthogonal*') : (flex = '1' next = '2') : (hint = 'Orthogonal Camera')
+				option : (select_id = '3' textSize = '7.5 7.5' text = 'Isometric*' ) : (flex = '1' next = '2') : (hint = 'Isometric Camera')
+			}
+		}
+
+	}
+
+}	
